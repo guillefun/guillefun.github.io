@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(240, 240, 240, 0.9);
+  line-height: 1.6;
+  height: 100vh;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgba(240, 240, 240, 0.9);
+  margin-left: 400px;
+  font-size: 2rem;
+}
+
+.parallax {
+  padding: 100px 35px;
+  background: transparent;
+}
+
+.info {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 400px;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.sidenav li:nth-child(1) {
+  margin-top: 29%;
+}
+.sidenav ul {
+  display: block;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+
+.sidenav ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.sidenav ul li a:hover {
+  color: skyblue;
+}
+
+section {
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+  padding: 25px;
+}
+
+.appheader {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+  flex-direction: column;
+  z-index: 4;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
