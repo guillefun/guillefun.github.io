@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Web</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="public/css/parallax.min.js"></script>
   </head>
   <body>
@@ -28,9 +30,9 @@
           </li>
         </ul>
       </nav>
-      <section id="about">
+      <section id="about" class="section-top">
         <div class="row">
-          <section class="section-abtme-left section-blk">
+          <section class="section-abtme-right section-blk">
             <div class="pic-div">
               <img src="img/profile.png" class="profile-img" />
             </div>
@@ -43,25 +45,28 @@
               <div class="profile-data-div">
                 <div id="profile-contact-div">
                   <h2>Contact</h2>
-                  <p>Email**</p>
-                  <p>Email2**</p>
-                  <p>LinkedIn**</p>
-                  <p>Skype**</p>
-                  <p>Github**</p>
+                  <ul class="list-contact">
+                    <li class="email"><i class="fas fa-envelope"></i>
+                      <a href="mailto: guillermofcampoarmor@gmail.com" >guillermofcampoarmor@gmail.com</a>
+                    </li>
+                    <li class="linkedin"><i class="fab fa-linkedin"></i>
+                      <a href="https://www.linkedin.com/in/guillermo-fern%C3%A1ndez-campoamor-fern%C3%A1ndez-83270b1b1/" target="_blank" rel="noopener noreferrer">Guillermo Fdez-Campoamor</a>
+                    </li>
+                    <li class="github"><i class="fab fa-github-alt"></i>
+                      <a href="https://github.com/guillefun" target="_blank" rel="noopener noreferrer">guillefun</a>
+                    </li>
+                  </ul>
                 </div>
                 <div id="profile-languages-div">
                   <h2>Languages</h2>
-                  <p>Email**</p>
-                  <p>Email2**</p>
-                  <p>LinkedIn**</p>
-                  <p>Skype**</p>
-                  <p>Github**</p>
+                  <p>Spanish (Native)</p>
+                  <p>English (B2)</p>
                 </div>
               </div>
             </div>
             <p></p>
           </section>
-          <section class="section-abtme-right">
+          <section class="section-abtme-left">
             <h2>About Me</h2>
             <p class="info">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -77,6 +82,7 @@
               interesset at. Usu ea mundi tincidunt, omnium virtute aliquando
               ius ex. Ea aperiri sententiae duo. Usu nullam dolorum quaestio ei,
               sit vidit facilisis ea.
+             
             </p>
             <h2>About Me</h2>
             <p>
@@ -120,6 +126,7 @@
           dico munere propriae. Vel ferri facilis ut, qui paulo ridens praesent
           ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore
           soleat appareat usu.
+         
         </p>
 
         <p>
@@ -143,6 +150,7 @@
           ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore
           soleat appareat usu.
         </p>
+
       </section>
 
       <section id="skills" class="section-wht">
@@ -168,7 +176,31 @@
           ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore
           soleat appareat usu.
         </p>
-
+        
+        <div class="containerSkills">
+          <ul>
+              <li class="html liSkills">HTML</li>
+              <li class="css liSkills">CSS</li>
+              <li class="js liSkills">JavaScript</li>
+              <li class="react liSkills">React JS</li>
+          </ul>
+        </div>
+        <div class="containerSkills">
+          <ul>
+              <li class="html liSkills">HTML</li>
+              <li class="css liSkills">CSS</li>
+              <li class="js liSkills">JavaScript</li>
+              <li class="react liSkills">React JS</li>
+          </ul>
+        </div>
+        <div class="containerSkills">
+          <ul>
+              <li class="html liSkills">HTML</li>
+              <li class="css liSkills">CSS</li>
+              <li class="js liSkills">JavaScript</li>
+              <li class="react liSkills">React JS</li>
+          </ul>
+        </div>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
