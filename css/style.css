@@ -197,7 +197,7 @@ a {
 .profile-name-div h1 {
   font-size: 22px;
   margin: auto;
-  padding: 20px 10px 5px 20px;
+  padding: 20px 15px 5px 15px;
   display: block;
 
   color: rgba(240, 240, 240, 0.9);
@@ -262,7 +262,7 @@ a {
 .containerSkills {
   width: 80%;
   margin: 0px 50px 0px;
-  padding: 10px;
+  padding: 0px 10px 0px;
   /* background-color: rgba(15, 15, 27, 0.445);*/
   border-radius: 30px;
   color: #666 !important;
@@ -271,28 +271,29 @@ a {
 .liSkills {
   position: relative;
   list-style: none;
-  margin: 20px 0;
+  margin: 5px 0;
   font-weight: 700;
+
   text-transform: uppercase;
-  font-size: medium;
+  font-size: 14px;
 }
 
-.liSkills:before {
+.animation:before {
   content: "";
   position: absolute;
   top: 5px;
-  left: 150px;
-  width: 80%;
+  left: 280px;
+  width: 60%;
   height: 15px;
   background-color: rgba(36, 36, 36, 0.5);
   border-radius: 1000px;
 }
 
-.liSkills:after {
+.animation:after {
   content: "";
   position: absolute;
   top: 5px;
-  left: 150px;
+  left: 280px;
   width: 0;
   height: 15px;
   background-color: rgb(36, 36, 36);
@@ -302,42 +303,32 @@ a {
   animation-fill-mode: forwards;
 }
 
-.liSkills.html:after {
+.animation.html:after {
   animation-name: html;
 }
 
 @keyframes html {
   to {
-    width: 65%;
+    width: 30%;
   }
 }
 
-.liSkills.css:after {
-  animation-name: css;
-}
-
-@keyframes css {
-  to {
-    width: 55%;
-  }
-}
-
-.liSkills.js:after {
+.animation.js:after {
   animation-name: js;
 }
 
 @keyframes js {
   to {
-    width: 70%;
+    width: 30%;
   }
 }
 
-.liSkills.react:after {
+.animation.react:after {
   animation-name: react;
 }
 
 @keyframes react {
   to {
-    width: 50%;
+    width: 30%;
   }
 }
