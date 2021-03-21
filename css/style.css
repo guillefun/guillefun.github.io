@@ -8,25 +8,23 @@ body {
   background-image: url("../img/photo1.jpg");
   line-height: 1.6;
   height: 100vh;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: black rgb(168, 168, 168); /* scroll thumb and track */
   overflow: hidden;
-}
-body {
-  scrollbar-width: thin;          /* "auto" or "thin" */
-  scrollbar-color: black rgb(168, 168, 168);   /* scroll thumb and track */
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(168, 168, 168);        /* color of the tracking area */
+  background: rgb(168, 168, 168); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: black;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid rgb(168, 168, 168);  /* creates padding around scroll thumb */
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(168, 168, 168); /* creates padding around scroll thumb */
 }
 
 .container {
@@ -58,7 +56,6 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   width: 100%;
   justify-content: right;
-  
 }
 
 .navbar ul:last-child {
@@ -71,20 +68,18 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  
 }
 
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
-  font-family: 'Grenze', serif;
+  font-family: "Grenze", serif;
   color: rgba(240, 240, 240, 0.9);
   overflow: hidden;
 }
 
-.navbar ul li a:before {
+.navbar ul li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -92,11 +87,21 @@ body::-webkit-scrollbar-thumb {
   right: -150%;
   height: 2px;
   background: currentcolor;
-  --grad: linear-gradient(to right, white calc(50% - 5px), transparent calc(50% - 5px) calc(50% + 5px), white 0);
+  --grad: linear-gradient(
+    to right,
+    white calc(50% - 5px),
+    transparent calc(50% - 5px) calc(50% + 5px),
+    white 0
+  );
+
   -webkit-mask: var(--grad), var(--grad), var(--grad);
+
   -webkit-mask-size: 230% 100%, 280% 100%, 350% 100%;
+
   -webkit-mask-position: 100% 0;
+
   -webkit-mask-composite: destination-in;
+
   mask: var(--grad), var(--grad), var(--grad);
   mask-size: 230% 100%, 280% 100%, 350% 100%;
   mask-position: 100% 0;
@@ -111,7 +116,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.navbar ul li a:hover {
+.navbar ul li a::hover {
   color: skyblue;
 }
 
@@ -137,7 +142,6 @@ section h1 {
   font-size: 2rem;
   float: left;
   padding: 0px 0px 15px;
-  
 }
 section h2 {
   font-size: 1.5rem;
@@ -154,8 +158,6 @@ section .info {
   padding-top: 0px;
 }
 
-
-
 .section-blk {
   background: rgba(39, 39, 39, 0.9);
   background: linear-gradient(
@@ -166,18 +168,18 @@ section .info {
   );
 }
 
-#education h1{
-  font-family: 'Grenze', serif;
+#education h1 {
+  font-family: "Grenze", serif;
 }
-#skills h1, h2{
-  font-family: 'Grenze', serif;
+#skills h1,
+h2 {
+  font-family: "Grenze", serif;
 }
 
-#experience h1{
-  font-family: 'Grenze', serif;
+#experience h1 {
+  font-family: "Grenze", serif;
 }
 .section-blk h1 {
-
   color: rgba(240, 240, 240, 0.9);
 }
 
@@ -196,13 +198,10 @@ section .info {
 }
 
 .section-wht h1 {
-
   color: rgba(0, 0, 0, 0.9);
- 
 }
 .section-wht p {
   color: #666 !important;
-  
 }
 
 .section-abtme-right {
@@ -223,13 +222,13 @@ a {
   margin: 0px;
 }
 
-.section-abtme-left h2{
-  font-family: 'Grenze', serif;
+.section-abtme-left h2 {
+  font-family: "Grenze", serif;
 }
 .row {
   padding-bottom: 30px;
 }
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -295,7 +294,7 @@ a {
 .profile-data-div div h2 {
   color: rgba(240, 240, 240, 0.9);
   padding: 20px 20px 5px 20px;
-  font-family: 'Grenze', serif;
+  font-family: "Grenze", serif;
   font-size: 1.5rem;
   display: block;
 }
@@ -353,7 +352,7 @@ a {
   font-size: 14px;
 }
 
-.animation:before {
+.animation::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -364,7 +363,7 @@ a {
   border-radius: 1000px;
 }
 
-.animation:after {
+.animation::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -378,7 +377,7 @@ a {
   animation-fill-mode: forwards;
 }
 
-.animation.html:after {
+.animation.html::after {
   animation-name: html;
 }
 
@@ -388,7 +387,7 @@ a {
   }
 }
 
-.animation.js:after {
+.animation.js::after {
   animation-name: js;
 }
 
@@ -398,7 +397,7 @@ a {
   }
 }
 
-.animation.react:after {
+.animation.react::after {
   animation-name: react;
 }
 
